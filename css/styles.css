@@ -1,0 +1,668 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+.Top_menu {
+    top: 0;
+    width: 100%;
+    height: 8em;
+    padding: 0 10px;
+    line-height: 8em;
+    background-color: rgb(210, 180, 140);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 1);
+    text-align: center;
+    color: white;
+    z-index: 1000;
+}
+
+
+.Top_menu h1 {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 58px;
+    text-align: center;
+}
+
+.Top_menu_right {
+    color: white;
+    text-align: right;
+    margin: 0;
+    font-size: 30px;
+    z-index: 10;
+}
+
+.right_top_corner {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    color: black; 
+    padding: 50px; 
+    font-size: 26px; 
+    text-shadow: none;
+    z-index: 1;
+}
+
+.Top_menu img {
+    margin-right: 1px;
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+}
+
+
+.Top_menu a img {
+    transition: transform 0.3s ease;
+}
+
+.Top_menu a img:hover {
+    transform: scale(1.1);
+}
+
+.Top_menu_left {
+    margin-left: 1px;
+    color: white;
+    text-align: left;
+    margin: 0;
+    font-size: 30px;
+}
+
+.Top_menu ul {
+    list-style: none;
+    margin: 0;
+}
+
+.Top_menu li {
+    margin-right: 10px;
+    display: inline;
+}
+
+.Top_menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.Top_menu a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 8em;
+    padding: 2em;
+}
+
+main h1 {
+    color: black;
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 58px;
+}
+
+.services-container {
+	padding: 40px;
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+}
+
+.service {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    background-color: #808080;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(10px); /* Смещение вниз на 10px */
+    transition: transform 0.3s ease;
+}
+
+
+.service img {
+    width: 235px;
+    height: 194px;
+}
+
+.service h3 {
+	text-decoration: none;
+    margin: 10px 0;
+    color: black;
+}
+
+.service ul {
+	color:black;
+	text-decoration: none;
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.service a {
+    color: black;
+    text-decoration: none;
+}
+
+.service a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.service p {
+	color: black;
+	text-decoration: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+
+footer {
+    background-color: #808080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Чтобы `footer` был внизу страницы */
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Стили для фотогалереи */
+.gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Стили для контента о технике */
+.techniques-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.content-heading {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.content-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.content-list, .content-list-ordered {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 20px;
+    padding-left: 20px;
+    color: #555;
+}
+
+/* Стили для фотогалереи */
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.gallery-img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button.prev, button.next {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button.prev:hover, button.next:hover {
+    color: #000;
+}
+
+/* Стили для контента "Контакты" */
+.contacts-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-box {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #555;
+}
+
+.contact-map {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-map h3 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 32px;
+    color: #333;
+}
+
+.about-us p, .about-us ul {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+/* Стили для списка */
+.about-us ul {
+    margin-left: 20px;
+}
+
+/* Стили для картинки */
+.about-us img {
+    width: 50%; /* Уменьшение ширины изображения */
+    height: auto;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    display: block; /* Изображение будет центроваться */
+    margin: 0 auto;
+}
+
+
+h1.specialists-title {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+    font-size: 32px;
+}
+
+/* Контейнер для специалистов */
+.specialists-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Блоки специалистов */
+.specialist {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.specialist:hover {
+    transform: scale(1.03);
+}
+
+/* Описание специалистов */
+.specialist p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.specialist h2 {
+    color: #00796b;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Стили для списка */
+.specialist ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+
+/* Стиль для списка услуг */
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Стиль для элемента услуги */
+.service-item {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Стиль для ссылки услуги */
+.service-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Стиль для изображения услуги */
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Стиль для описания услуги */
+.service-description {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Стиль для заголовка услуги */
+.service-description h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Стиль для цены */
+.price {
+    color: #E91E63;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+
+/* Стили для раздела отзывов */
+.reviews-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.reviews-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Стили для формы отзывов */
+.reviews-form-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews-form-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.reviews-form-container form input,
+.reviews-form-container form textarea,
+.reviews-form-container form select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.reviews-form-container form textarea {
+    height: 100px;
+}
+
+.review-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review-buttons button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.review-buttons button[type="button"] {
+    background-color: #f44336;
+}
+
+.review-buttons button:hover {
+    background-color: #45a049;
+}
+
+.review-buttons button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Стиль для сообщения подтверждения */
+#confirmation-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
+
+
+/* Стили для страницы service_1.html */
+
+.service-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+}
+
+.service-container h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.service-description {
+    max-width: 700px;
+    text-align: justify;
+    line-height: 1.6;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.service-description ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.booking-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-button:hover {
+    background-color: #3498db;
+}

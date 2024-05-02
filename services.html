@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Услуги | Керамик Арт</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="Top_menu">
+            <a href="index.html">
+                <img src="data/logo.svg" alt="Logo">
+            </a>
+            <div class="Top_menu_left">
+                <ul>
+                    <li><a href="techniques.html">О техниках</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <h1>Керамик Арт</h1>
+            <div class="Top_menu_right">
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="specialists.html">Специалисты</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                </ul>
+            </div>
+            <div class="right_top_corner">
+                <h6>+7 906 697 01 53 | kerart@mail.com</h6>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Block -->
+    <main>
+        <h1>Услуги</h1>
+        <section class="services-list">
+            <!-- Услуга 1 -->
+            <article class="service-item">
+                <a href="service_1.html">
+                    <img src="data/service_1.png" alt="Услуга 1" class="service-image">
+                    <div class="service-description">
+                        <h3>МАСТЕР-КЛАСС "БАЗОВЫЙ"</h3>
+                        <p class="price">3000 руб.</p>
+                        <p>1,5 часа творчества, гончарный круг и лепка, 1 обжиг. Для тех, кто хочет необычно провести время и попробовать себя в роли гончара.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Услуга 2 -->
+            <article class="service-item">
+                <a href="service_2.html">
+                    <img src="data/service_2.png" alt="Услуга 2" class="service-image">
+                    <div class="service-description">
+                        <h3>МАСТЕР-КЛАСС №1</h3>
+                        <p class="price">4500 руб.</p>
+                        <p>1,5 часа творчества, гончарный круг и лепка, роспись ангобами, покрытие прозрачной глазурью, 2 обжига. Создайте что-то функциональное и яркое.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Услуга 3 -->
+            <article class="service-item">
+                <a href="service_3.html">
+                    <img src="data/service_3.png" alt="Услуга 3" class="service-image">
+                    <div class="service-description">
+                        <h3>МАСТЕР-КЛАСС ПО РОСПИСИ ГЛАЗУРЯМИ</h3>
+                        <p class="price">3800 руб.</p>
+                        <p>Роспись жидкими стеклами, 15 цветов на выбор, 1 обжиг. Добавьте яркости и водонепроницаемости своим работам.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Услуга 4 -->
+            <article class="service-item">
+                <a href="service_4.html">
+                    <img src="data/service_4.png" alt="Услуга 4" class="service-image">
+                    <div class="service-description">
+                        <h3>Свидание за гончарным кругом</h3>
+                        <p class="price">6000 руб.</p>
+                        <p>2 часа в приватной атмосфере, мастер-класс с росписью, напитки и закуски, искусство, музыка и свечи. Романтическое свидание для двоих.</p>
+                    </div>
+                </a>
+            </article>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <h2>Отзывы</h2>
+            <div class="reviews-form-container">
+                <form id="review-form" onsubmit="submitReview(event)">
+                    <label for="name">ФИО:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="service">Выберите услугу:</label>
+                    <select id="service" name="service" required>
+                        <option value="Базовый мастер-класс">МАСТЕР-КЛАСС "БАЗОВЫЙ"</option>
+                        <option value="Мастер-класс №1">МАСТЕР-КЛАСС №1</option>
+                        <option value="Роспись глазурями">МАСТЕР-КЛАСС ПО РОСПИСИ ГЛАЗУРЯМИ</option>
+                        <option value="Свидание за гончарным кругом">Свидание за гончарным кругом</option>
+                    </select>
+                    
+                    <label for="review">Напишите отзыв:</label>
+                    <textarea id="review" name="review" required></textarea>
+                    
+                    <div class="review-buttons">
+                        <button type="submit">Отправить</button>
+                        <button type="button" onclick="clearReviewForm()">Стереть</button>
+                    </div>
+                </form>
+                <p id="confirmation-message"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Все права защищены.</p>
+            <p>Следите за нами в социальных сетях: 
+                <a href="https://telegram.org" target="_blank">Telegram</a> | 
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+                <a href="https://vk.com" target="_blank">VK</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/services.js"></script>
+</body>
+
+</html>
